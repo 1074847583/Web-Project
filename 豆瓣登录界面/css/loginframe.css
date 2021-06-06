@@ -1,0 +1,145 @@
+@import "common.css"; 
+@import "reset.css";
+
+/*统一设置*/
+a{
+    color: #41ac52;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    height: 34px;
+    text-indent: 60px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/*更多的缩进*/
+input[type="text"].more-text-indent{
+    padding-left: 60px;
+}
+
+/*统一设置结束*/
+
+.container{
+    width: 300px;
+    height: 300px;
+    line-height: 2;
+    padding: 10px;
+    padding-top: 30px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container .login .switch-menu{
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+}
+
+.container .login .switch-menu span{
+    width: 50%;
+    text-align: 50%;
+    cursor: pointer;
+}
+
+.container .login .switch-menu span.selected{
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #494949;
+    margin-bottom: -1px;
+}
+
+.container .login .form .form-item{
+    margin: 10px 0;
+    font-size: 13px;
+    position: relative;
+}
+
+.container .login .form .form-item .txt{
+    font-size: 12px;
+}
+
+.container .login .form .form-item .country-code{
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    left: 0;
+    top: 4px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    border-right: 1px solid #e4e6e5;
+    cursor: pointer;
+}
+
+.country-code .choose-area .center ul li:last-child{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.country-code .choose-area .center ul li .right{
+    color: #aaa;
+    font-weight: normal;
+}
+
+.country-code .choose-area .center ul li .selected{
+    color: #42bd56;
+}
+
+.country-code .choose-area .center ul li .selected .right{
+    color: inherit;
+}
+
+.container .form-item .ab-right{
+    position: relative;
+    right: 7bx;
+    top: 5px;
+}
+
+.container .form-item .btn{
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+}
+
+.container .login .form .form-item .tip{
+    font-size: 12px;
+    color: #333;
+}
+
+.container .qrcode{
+    font-size: 13px;
+}
+
+.container .qrcode .title{
+    color: #333;
+    border-bottom: 1px solid #ececec;
+}
+
+.container .qrcode .code{
+    text-align: center;
+    font-size: 0;
+    margin: 20px 0;
+}
+
+.container .qrcode .code img{
+    width: 170px;
+    height: 170px;
+}
+
+.container .qrcode .tip{
+    width: 183px;
+    height: 25px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, .08);
+    color: #494949;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
