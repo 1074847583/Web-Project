@@ -1,0 +1,154 @@
+@import "common.css";
+@import "reset.css";
+
+/*首页通用样式*/
+.container{  /*容器样式*/
+    width: 950px;
+    margin: 0 auto;
+}
+
+.left{ /*左浮动*/
+    float: left;
+}
+
+.right{ /*右浮动*/
+    float: right;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*首页通用样式结束*/
+
+/*页头开始*/
+.header{
+    height: 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.header .logo a{
+    width: 128px;
+    height: 0;
+    overflow: hidden;
+    padding-top: 40px;
+    display: block;
+    background: url("../images/Logo.PNG") no-repeat left bottom/100%;
+}
+
+.header .search{
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    margin-left: 20px;
+}
+
+.header .search .txt{
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+}
+
+.header .search .txt::placeholder{
+    color: #ccc;
+}
+
+.header .menu{
+    margin-top: 10px;
+}
+
+.header .menu a{
+    background: url("../images/nav.PNG") no-repeat left top/463px 20px;
+    width: 45px;
+    height: 25px;
+    float: left;
+    margin-left: 20px;
+}
+.header .menu .menu-read{
+    background-position: 0px 0;
+}
+
+.header .menu .menu-movie{
+    background-position: -60px 0;
+}
+
+.header .menu .menu-music{
+    background-position: -120px 0;
+}
+
+.header .menu .menu-group{
+    background-position: -180px 0;
+}
+
+.header .menu .menu-fm{
+    background-position: -240px 0;
+}
+
+.header .menu .menu-city{
+    background-position: -300px 0;
+}
+
+.header .menu .menu-dongxi{
+    background-position: -360px 0;
+}
+
+.header .menu .menu-doupin{
+    background-position: -420px 0;
+    width: 44px;
+}
+
+/*页头结束*/
+
+/*横幅开始*/
+
+.banner{
+    height: 304px;
+    background: #edf4ed url("../images/banner.PNG") no-repeat 120px top/auto 100% ;
+}
+
+.banner .container .loginarea{
+    width:300px;
+    height: 300px;
+}
+
+/*横幅结束*/
+
+/*尾部开始*/
+
+.box{
+    height: 100px;
+    background: rgb(250, 248, 248);
+}
+
+.box .boxstyle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color:rgb(241, 163, 157);
+    position: relative;
+    animation-name: jump;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes jump{
+    0%   {background-color:rgb(241, 163, 157); left:0px; top:0px;}
+    8.3%  {background-color:rgb(238, 199, 141); left:200px; top:0px;}
+    16.6%  {background-color:rgb(241, 240, 135); left:200px; top:80px;}
+    24.9%  {background-color:rgb(146, 238, 146); left:400px; top:80px;}
+    33.2%  {background-color:rgb(147, 238, 203); left:400px; top:0px;}
+    41.5%  {background-color:rgb(141, 196, 233); left:600px; top:0px;}
+    49.8%  {background-color:rgb(154, 156, 250); left:600px; top:80px;}
+    58.1%  {background-color:rgb(202, 146, 240); left:800px; top:80px;}
+    66.4%  {background-color:rgb(245, 164, 208); left:800px; top:0px;}
+    74.7%  {background-color:rgb(209, 241, 133); left:1000px; top:0px;}
+    83% {background-color:rgb(134, 181, 241); left:1000px; top:80px;}
+    91.3% {background-color:rgb(134, 181, 241); left:1180px; top:80px;}
+    100% {background-color:rgb(134, 181, 241); left:1180px; top:0px;}
+}
+
+/*尾部结束*/
